@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:url" content="https://www.musicboxnft.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Music Box | Cardano NFTs">
+    <meta property="og:description" content="Music Box | Cardano NFT Project">
+    <meta property="og:image" content="https://www.musicboxnft.com/img/musicBox.jpeg">
+    <meta property="og:site_name" content="Music Box | Cardano NFTs">
+    <meta property="og:image:secure_url" itemprop="image" content="https://www.musicboxnft.com/img/musicBox.jpeg">
+    <meta property="og:image" content="https://www.musicboxnft.com/img/musicBox.jpeg"/>
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="Music Box | Cardano NFTs">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="musicboxnft.com">
+    <meta property="twitter:url" content="https://www.musicboxnft.com/">
+    <meta name="twitter:title" content="Music Box | Cardano NFTs">
+    <meta name="twitter:description" content="Music Box | Cardano NFT Project">
+    <meta name="twitter:image" content="https://www.musicboxnft.com/img/musicBox.jpeg">
+    <title>Music Box | Cardano NFTs</title>
+    <meta name="description" content="Music Box | Cardano NFT Project">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" th:href="@{~/favicon/apple-icon-57x57.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" th:href="@{~/favicon/apple-icon-60x60.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" th:href="@{~/favicon/apple-icon-72x72.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" th:href="@{~/favicon/apple-icon-76x76.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" th:href="@{~/favicon/apple-icon-114x114.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" th:href="@{~/favicon/apple-icon-120x120.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" th:href="@{~/favicon/apple-icon-144x144.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" th:href="@{~/favicon/apple-icon-152x152.png}" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" th:href="@{~/favicon/apple-icon-180x180.png}" />
+    <link rel="icon" type="image/png" sizes="16x16" th:href="@{~/favicon/favicon-16x16.png}" />
+    <link rel="icon" type="image/png" sizes="32x32" th:href="@{~/favicon/favicon-32x32.png}" />
+    <link rel="icon" type="image/png" sizes="36x36" th:href="@{~/favicon/android-icon-36x36.png}" />
+    <link rel="icon" type="image/png" sizes="48x48" th:href="@{~/favicon/android-icon-48x48.png}" />
+    <link rel="icon" type="image/png" sizes="72x72" th:href="@{~/favicon/android-icon-72x72.png}" />
+    <link rel="icon" type="image/png" sizes="96x96" th:href="@{~/favicon/android-icon-96x96.png}" />
+    <link rel="icon" type="image/png" sizes="144x144" th:href="@{~/favicon/android-icon-144x144.png}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+    <link th:href="@{~/webjars/vuetify/2.6.4/dist/vuetify.min.css}" rel="stylesheet">
+    <script th:src="@{~/webjars/vue/2.6.14/vue.min.js}"></script>
+    <script th:src="@{~/webjars/vuetify/2.6.4/dist/vuetify.min.js}"></script>
+    <script th:src="@{~/webjars/http-vue-loader/1.4.2/src/httpVueLoader.js}"></script>
+    <script th:src="@{~/webjars/vue-router/3.5.3/dist/vue-router.min.js}"></script>
+    <script th:src="@{~/webjars/axios/0.26.1/dist/axios.min.js}"></script>
+    <script th:src="@{~/webjars/sockjs-client/1.6.0/dist/sockjs.min.js}"></script>
+    <script th:src="@{~/webjars/stomp-websocket/2.3.4/stomp.min.js}"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6EJ0DWBKB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y6EJ0DWBKB');
+    </script>
+    <script th:src='|https://www.google.com/recaptcha/api.js?render=${@captchaServiceV3.getReCaptchaSite()}|'></script>
+    <style>
+        .grecaptcha-badge {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <main-app></main-app>
+</div>
+<script type="text/javascript" th:inline="javascript">
+    new Vue({
+        el: '#app',
+        vuetify: new Vuetify({
+            theme: {
+                rtl: false,
+                dark: true,
+                themes: {
+                    dark: {
+                        primary: '#ffffff',
+                        secondary: '#b0bec5',
+                        accent: '#8c9eff',
+                        error: '#b71c1c',
+                    },
+                    light: {
+                        primary: '#000'
+                    }
+                },
+            },
+        }),
+        components: {
+            'main-app': httpVueLoader('../components/mainApp.vue')
+        },
+        data: () => ({}),
+        mounted() {}
+    });
+</script>
+<style>
+    body {
+        color: #494b4d;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.471;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .v-application {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .v-application .headline, .v-application .title {
+        line-height: 2rem;
+    }
+
+    .v-application--is-ltr .v-list-item__action:first-child, .v-application--is-ltr .v-list-item__icon:first-child {
+        margin-right: 10px;
+    }
+
+    .theme--dark.v-icon {
+        color: inherit;
+    }
+
+    .theme--dark.v-application {
+        background-color: black;
+        color: #fff;
+    }
+
+    .theme--dark.v-sheet {
+        background-color: black;
+        border-color: #1e1e1e;
+        color: #fff;
+    }
+
+    .theme--dark.v-app-bar.v-toolbar.v-sheet {
+        background-color: rgb(0 0 0);
+    }
+
+    .v-footer--absolute, .v-footer--fixed {
+        z-index: 4;
+    }
+
+    .theme--dark.v-footer {;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.73) 100%);
+        color: #fff;
+    }
+
+    .theme--dark.v-navigation-drawer {
+        background: rgba(0, 0, 0, 0.9) linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.73) 100%);
+    }
+
+    .theme--dark.v-card {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+    }
+
+    .v-application--is-ltr .v-toolbar__content>.v-btn.v-btn--icon:last-child {
+        margin-right: 0;
+    }
+
+    .v-application--is-ltr .v-toolbar__content>.v-btn.v-btn--icon:first-child, .v-application--is-ltr .v-toolbar__extension>.v-btn.v-btn--icon:first-child {
+        margin-left: 0;
+    }
+
+    .v-toolbar__content, .v-toolbar__extension {
+        padding: 4px 8px;
+    }
+
+    .nestedListItem {
+        padding-left: 30px!important;
+    }
+
+    .nestedListItem::before {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        left: 28px;
+        top: 0;
+        bottom: 0;
+        border-left: 1px solid #fb8c004d;
+    }
+
+    .nestedListItem:hover:after {
+        border-color: transparent;
+    }
+
+    .nestedListItem::after {
+        content: "";
+        min-height: auto;
+        font-size: 0;
+        display: block;
+        position: absolute;
+        width: .5rem;
+        height: .5rem;
+        background-color: #fb8c00;
+        left: 24px;
+        top: calc(50% - .3rem);
+        border: 1px solid #333;
+        border-radius: 50%;
+        z-index: 2;
+    }
+
+    .nestedListItems {
+        background: hsla(0, 0%, 100%, 0.06);
+        padding: 0!important;
+    }
+
+    .video-container {
+        overflow: hidden;
+        position: relative;
+        width:100%;
+        max-width: 775px;
+        margin: auto;
+    }
+
+    .video-container::after {
+        padding-top: 56.25%;
+        display: block;
+        content: '';
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .v-application ol, .v-application ul {
+        padding-left: 24px;
+        padding-right: 30px;
+    }
+
+    b, strong {
+        font-weight: bold;
+    }
+
+    .theme--dark.v-list {
+        background: #000000e6;
+        color: #fff;
+    }
+</style>
+</body>
+</html>
